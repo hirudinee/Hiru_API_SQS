@@ -7,25 +7,25 @@ exports.handler = function (event, context, callback) {
 		QueueUrl: 'https://sqs.us-east-1.amazonaws.com/480964559519/Hiru_SQS',
 		DelaySeconds: '0',
 		MessageAttributes: {
-			"name": {
-				"DataType": "String",
-				"StringValue": "001"
+			"undefined": {
+				"DataType": "undefined",
+				"BinaryValue": "undefined"
 			},
-			"number": {
-				"DataType": "Number",
-				"StringValue": "001"
+			"undefined": {
+				"DataType": "undefined",
+				"BinaryValue": "undefined"
 			},
-			"Binary": {
-				"DataType": "Binary",
-				"BinaryValue": "01"
+			"undefined": {
+				"DataType": "undefined",
+				"BinaryValue": "undefined"
 			}
 		}
 	}, function (data) {
 		// your logic (logging etc) to handle successful message delivery, should be here
-		console.log('data',data);
+		console.log('data', data);
 	}, function (error) {
 		// your logic (logging etc) to handle failures, should be here
-		console.log('error' ,error);
+		console.log('error', error);
 	});
 
 
