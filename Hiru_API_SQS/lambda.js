@@ -3,7 +3,7 @@ let SL = require('@slappforge/slappforge-sdk');
 const sqs = new SL.AWS.SQS(AWS);
 exports.handler = function (event, context, callback) {
 	sqs.receiveMessage({
-		QueueUrl: 'https://sqs.us-east-1.amazonaws.com/480964559519/Hiru_SQS',
+		QueueUrl: 'https://sqs.us-east-1.amazonaws.com/480964559519/Hiru_Test1201',
 		AttributeNames: ['All'],
 		MaxNumberOfMessages: '1',
 		VisibilityTimeout: '30',
